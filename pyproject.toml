@@ -9,6 +9,8 @@ readme = "README.md"
 python = "^3.11"
 flask = "^2.3.2"
 requests = "^2.31.0"
+redislite = "^6.2.859089"
+msgpack = "^1.0.5"
 
 
 [build-system]
