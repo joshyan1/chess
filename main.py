@@ -20,7 +20,7 @@ def search():
 
     #check if account exists
     if redis.exists(f'{site}:{username}'):
-        cache = msgpack.unpack(redis.get(f'{site}:{username}')) #unpacks data from binary to string
+        cache = msgpack.unpackb(redis.get(f'{site}:{username}')) #unpacks data from binary to string
         print(cache)
         return cache
 
